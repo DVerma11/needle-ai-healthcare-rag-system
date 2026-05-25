@@ -85,6 +85,16 @@ Output:
 - Required Documentation
 - Confidence Assessment
 
+## Future Improvements
+
+- Enhanced vector search optimization
+- Multi-policy retrieval support
+- Expanded CMS policy coverage
+- Real-time API integration
+- Advanced confidence calibration
+- Interactive healthcare decision support interface
+- FHIR-compatible healthcare interoperability support
+
 ```markdown id="4kh80r"
 
 ## Example Workflow Output
@@ -121,12 +131,3 @@ This project demonstrates:
 - Explainable healthcare AI
 - Agentic healthcare reasoning systems
 
-## Future Improvements
-
-- Enhanced vector search optimization
-- Multi-policy retrieval support
-- Expanded CMS policy coverage
-- Real-time API integration
-- Advanced confidence calibration
-- Interactive healthcare decision support interface
-- FHIR-compatible healthcare interoperability support
