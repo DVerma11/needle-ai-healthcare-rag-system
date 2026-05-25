@@ -1,3 +1,9 @@
+## Usage Notice
+
+This repository is shared for academic, research, and portfolio demonstration purposes only.
+
+No permission is granted to copy, redistribute, commercialize, or reuse substantial portions of this project without explicit written permission from the author.
+
 # NeedLE AI: Agentic RAG System for CMS Medical Coverage Decision Support
 
 ## Project Overview
@@ -31,18 +37,34 @@ The system integrates structured healthcare rules, vector-based policy retrieval
 - Pandas
 - Jupyter Notebook
 
-## Agent Workflow
+## Why This Project Matters
 
-The system uses a multi-agent workflow:
+Healthcare coverage policies are often complex, fragmented, and difficult to interpret manually. This project explores how Retrieval-Augmented Generation (RAG) and agentic AI workflows can support explainable, evidence-grounded healthcare coverage decision support using CMS policy data.
 
-1. Input Normalization Agent
-2. CPT/ICD Extraction
-3. Retrieval Agent
-4. Coverage Validation Agent
-5. Evidence Verification
-6. Final Response Generation
+The system combines structured healthcare rule validation with LLM-powered reasoning and retrieval pipelines to improve transparency and reduce hallucinations in healthcare AI responses.
 
-The workflow ensures grounded responses using retrieved CMS policy evidence.
+## LangGraph Agent Workflow
+
+The system uses a sequential agentic workflow built with LangGraph to process healthcare coverage questions through structured reasoning stages.
+
+### Workflow Stages
+
+1. **Parse**  
+   Extract CPT, ICD-10, date of service, and user intent.
+
+2. **Evidence Retrieval**  
+   Retrieve relevant CMS policy evidence and structured coverage mappings.
+
+3. **Coverage Decision**  
+   Evaluate medical necessity and policy alignment.
+
+4. **Confidence Assessment**  
+   Generate confidence estimation based on evidence quality and rule matching.
+
+5. **Final Response Generation**  
+   Produce an explainable, evidence-grounded healthcare coverage response.
+
+![LangGraph Workflow](screenshots/langgraph_workflow.png)
 
 ## Data Sources
 
@@ -62,6 +84,32 @@ Output:
 - Relevant NCD
 - Required Documentation
 - Confidence Assessment
+
+```markdown id="4kh80r"
+
+## Example Workflow Output
+
+Example coverage workflow:
+
+- User submits CPT and ICD-10 query
+- System retrieves CMS policy evidence
+- Structured rule validation is performed
+- Coverage determination is generated
+- Confidence scoring and evidence grounding are applied
+- Final explainable response is returned
+
+## Repository Structure
+
+```text
+needle-ai-healthcare-rag-system/
+│
+├── docs/
+├── notebooks/
+├── sample_outputs/
+├── screenshots/
+├── README.md
+├── requirements.txt
+└── .gitignore
 
 ## Healthcare Informatics Applications
 
