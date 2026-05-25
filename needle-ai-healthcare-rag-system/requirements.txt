@@ -1,0 +1,11 @@
+pypdf
+langchain
+langchain-openai
+langchain-community
+langgraph
+pandas
+numpy
+pyarrow
+ipython
+jupyter
+openpyxl
